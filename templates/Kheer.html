@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kheer</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% block content %}
+
+        <h1>Kheer</h1>
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/kheer1.jpg' %}" class="rounded" >
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>History</h2>
+            <p>Kheer, also known as rice pudding, is a classic dessert that has been enjoyed in various forms across the Indian subcontinent for centuries. The dish has its roots in ancient Indian culinary traditions and has been mentioned in historical texts. Over time, different regions and communities have added their own variations to the basic recipe, resulting in a diverse range of Kheer preparations..</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Kheer:</h2>
+            <p>1.	North India: Kheer is particularly popular in North India, where it is enjoyed as a traditional dessert in various states, including Punjab, Uttar Pradesh, Haryana, and Rajasthan. Each region might have its own unique twist on the preparation.
+2.	Religious and Festive Occasions: Kheer is often prepared and served during religious festivals, special occasions, and celebrations in North India. It holds significance in cultural and religious rituals, making it a beloved dessert during festive times.
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Preparation: Ingredients:</h2>
+            <p>1.	Rice: Basmati rice is commonly used to prepare Kheer, contributing to its aromatic quality.
+2.	Milk: Whole milk is simmered and reduced to create a creamy base for the dessert.
+3.	Sugar: Sweetness is added to taste, and the amount can be adjusted according to preferences.
+4.	Cardamom: Ground cardamom is often added for its aromatic flavor.
+5.	Nuts and Dry Fruits: Chopped almonds, cashews, pistachios, and raisins are commonly used to garnish and add texture.
+6.	Saffron or Kewra Water: Saffron strands or kewra water may be used to enhance the flavor and aroma.
+</p>
+        </div>
+
+
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Kheer" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
+
+</body>
+</html>

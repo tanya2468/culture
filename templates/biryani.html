@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuchipudi Dance</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+ {% block content %}
+        <h1>BIRYANI</h1>
+
+
+    <div  style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/biryani1.jpg' %}" class="rounded" alt="Biryani">
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>History</h2>
+            <p>Hyderabad Biryani has its roots in the kitchens of the Nizams, who were known for their lavish and diverse culinary traditions. The dish is believed to have been created in the kitchens of the Nizam rulers, combining Mughlai and Iranian flavors with local spices and ingredients. Over time, it became a symbol of the rich culinary heritage of Hyderabad</p>
+        </div>
+
+
+
+        <div class="card">
+            <h2>Preparation: </h2>
+            <p>The preparation of Hyderabad Biryani is an elaborate process that involves marinating meat, partially cooking the rice, and then layering the meat and rice in a heavy-bottomed pot. The pot is then sealed with dough to trap the steam, allowing the flavors to infuse and the meat to cook tenderly. The slow-cooking method, known as "dum pukht," results in a biryani with distinct layers of aromatic rice and flavorful meat.</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Hyderabad Biryani:</h2>
+            <p>1.	Paradise Biryani: Paradise is one of the most iconic biryani destinations in Hyderabad. Established in 1953, it has become synonymous with the city's biryani culture.
+2.	Shadab Hotel: Shadab is another renowned eatery in Hyderabad known for its delicious biryani. It has been serving authentic Hyderabadi cuisine for several decades.
+3.	Bawarchi: Bawarchi is famous for its flavorful biryani and has gained popularity not only in Hyderabad but also in other parts of India.
+4.	Hotel Shah Ghouse: This is a popular spot known for its delectable biryani, attracting locals and tourists alike.
+</p>
+        </div>
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Biryani" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
+
+</body>
+</html>

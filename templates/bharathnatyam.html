@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html>
+  <head>
+    <title>Bharatanatyam</title>
+
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  {% block content %}
+  <div class="more">
+    <h1>Bharatanatyam</h1>
+     <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+    <div class="text-center">
+<img src="{% static 'images/dances/dance2.jpeg' %}" class="rounded" alt="bharatnatyam">
+</div>
+     </div>
+    <div class="container-xxl">
+
+
+
+      <div class="card">
+
+
+      <h2>History</h2>
+
+           <p>Bharatanatyam, a classical Indian dance form, has its theoretical foundations deeply rooted in ancient texts such as the Kootha Nool in Tamil and the Natya Shastra, a Sanskrit text attributed to the ancient scholar Bharata Muni.
+
+The Natya Shastra is a comprehensive treatise on performing arts, encompassing various aspects of dance, drama, and music. The first complete compilation of Natya Shastra is estimated to be between 200 BCE and 200 CE, although there are varying estimates ranging from 500 BCE to 500 CE.</p>
+           <p>This text, comprising around 6000 verses organized into 36 chapters, serves as a significant source for understanding the theoretical underpinnings of Bharatanatyam. It covers a wide range of topics related to dance, including the theory of Tandava dance (associated with Shiva), the concepts of rasa (emotional flavor), bhava(emotional expression), gestures, acting techniques, basic steps, and standing postures.
+
+According to the Natya Shastra, dance and other performance arts are considered a form of expressing spiritual ideas, virtues, and the essence of scriptures. The text emphasizes the integration of various elements to create a holistic and meaningful artistic expression, aligning with the cultural and philosophical values of classical Indian dances like Bharatanatyam.
+
+
+
+
+
+</p>
+
+  </div>
+
+      <div class="card">
+
+ <h2>Costume and attire</h2>
+
+<p>The costume of a female Bharatanatyam dancer resembles a Tamil Hindu bridal dress. It typically consists of a sari in bright colors with golden or silver zari embroidery on the borders. The costume can be stitched from the sari, with individual pieces for a bottom (either a skirt or salwar-shaped pants), a pleated piece which falls in front and opens like a hand fan when the dancer flexes her knees or performs footwork, a hip piece that covers the seat of the pant/skirt, and a torso piece that looks like an aanchal (i.e. the draped part of a regular sari). Some dancers also opt for an unstitched sari that is draped specially, with the single piece of cloth starting around the legs like a dhoti, then upwards along the front torso, over the left shoulder, and then down the back with its end held at the waist by a jeweled belt.[87] The costume of a male Bharatanatyam dancer is usually either a sari or a white cotton cloth draped around the legs and bottom half of the body like a dhoti. During performances, the upper body of the male dancer remains bare. Male dancers typically do not wear stitched costumes.</p>
+
+
+  </div>
+       <div class="card">
+
+ <h2>Symbolism</h2>
+
+<p>
+Certainly, Bharatanatyam, like other classical dances of India, incorporates symbolism in its abhinaya (acting) as well as in its broader goals. The foundational principles of abhinaya can be traced back to the Natya Shastra, a key ancient Sanskrit text on performing arts.
+
+According to the Natya Shastra, drama is defined as an art that aesthetically arouses joy in the spectator through the actor's skillful communication. This communication involves connecting and transporting the individual into a heightened state of sensual inner being. Abhinaya, which literally means "carrying to the spectators," is the medium through which this connection is established.</p>
+<p>In the context of classical dance like Bharatanatyam, abhinaya involves the holistic application of body, speech, mind, and scene. Through the use of expressive movements, facial expressions, and gestures, dancers convey narratives, emotions, and stories to the audience. Song and music play a crucial role in enhancing the emotional impact of the performance.
+
+The Natya Shastra highlights that drama, as an art form, engages every aspect of life to glorify and evoke a state of joyful consciousness. This underscores the profound connection between the artist and the audience, where the performance becomes a shared experience that transcends mere entertainment and aims to elevate the spectator to a heightened aesthetic and emotional state. The use of symbolism in abhinaya further enriches the storytelling aspect of Bharatanatyam, adding layers of meaning and cultural significance to the performance.</p>
+  </div>
+            <div class="card">
+
+ <h2>Modern revival: schools and training centers</h2>
+
+<p>After India gained independence from British rule in 1947, Bharatanatyam experienced significant growth and is now the most popular classical Indian dance style in the country. It enjoys widespread support in both India and among expatriate Indian communities globally. However, it is crucial to note that Bharatanatyam represents just one facet of India's diverse dance and performance arts, and the perception of it as synonymous with Indian dance may not fully capture the richness of the country's cultural heritage.
+
+Historically, Bharatanatyam faced challenges during British rule, leading to attempts to ban its traditions. In response, the dance form underwent a revival by transitioning away from Hindu temple and religious contexts. Post-independence, there has been a renewed interest in Bharatanatyam's history, ancient traditions, invocation rituals, and the spiritual dimensions of the dance. Some modern innovations in Bharatanatyam also incorporate quasi-religious elements.
+</p>
+  </div>
+<div class="card">
+ <div class="references">
+        <h2>References:</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Bharatanatyam" target="_blank">Wikipedia</a></li>
+
+            <!-- Add more references as needed -->
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+
+
+
+
+{% endblock  %}
+      </div>
+  </body>
+</html>

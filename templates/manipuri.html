@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipuri</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+     {% block content %}
+        <h1>Manipuri Dance</h1>
+
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 100;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/dances/manipuri1.jpg' %}" class="rounded" alt="Kuchipudi Dance">
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>Origin</h2>
+            <p>
+Manipuri dance, with its origins in Vedic texts and its identification with the mythical 'Gandharvas,' reflects a profound cultural heritage. From Southeast Asian temple sculptures to being mentioned as 'Gandharva-desa' in ancient texts, Manipuri dance has left an indelible mark on the cultural landscape. The dance form's roots in the Rig Veda, the Mahabharata narrative, and the integration of Vaishnavism during medieval times highlight its multifaceted evolution, interweaving spirituality, folklore, and royal patronage.</p>
+        <p>The colonial era posed challenges, leading to a decline in Manipuri dance, but concerted revival efforts in the 20th century, spurred by classical art enthusiasts and catalyzed by Rabindranath Tagore, revitalized this traditional art form. Manipuri dance's journey encompasses ancient myths, cultural resilience, and modern revival, positioning it as a significant and vibrant part of India's classical dance heritage.</p>
+        </div>
+
+        <div class="card">
+            <h2>Costumes</h2>
+            <p>In Manipuri dance, the traditional costumes are integral to the rich cultural tapestry of the art form. Male dancers don vibrant colored dhotis, specifically the 'dhora' or 'dhotra,' chosen for their flexibility, allowing for intricate footwork during performances. Those portraying Lord Krishna often wear a peacock feather-adorned crown, a symbolic nod to the divine. On the other hand, female dancers, especially in the context of 'Rasa Lila,' showcase the Potloi costume introduced by Meidingu Bhagyachandra Maharaj. This ensemble features the Kumil costume, a barrel-shaped skirt intricately embellished with gold or silver embroidery, mirrors, and lotus designs. Complemented by a velvet choli and a translucent white veil covering the head, the overall look is further adorned with round-shaped jewelry and flower garlands on the face, hands, neck, waist, and legs. Notably, unlike many other classical dance forms, Manipuri dancers do not wear ghunghroo, emphasizing the unique stylistic elements of this traditional dance.</p>
+        </div>
+
+        <div class="card">
+            <h2>Instruments And Music</h2>
+            <p>
+Manipuri dance is accompanied by a rich ensemble of traditional instruments, including the Pung drum, kartals (cymbals), harmonium, flute, pena, and sembong, creating a melodious tapestry that enhances the visual performance. A crucial accompaniment is the singer, adding lyrical depth to the dance. Performance styles like Pong Cholom showcase dancer-drummers' spectacular footwork, while Kartal Cholom involves a mesmerizing group dance with cymbals. Mandilla Cholom features women in a dynamic cymbal-playing group performance. The songs, drawn from languages like Sanskrit and Brij Bhasha, are sourced from poets like Jayadeva and Govindadas, adding a poetic layer to the cultural expression. This fusion of instruments and music elevates Manipuri dance, creating a captivating and spiritually resonant artistic experience.
+
+
+
+
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Famous Exponents</h2>
+            <p>Several distinguished exponents have played pivotal roles in shaping and popularizing Manipuri dance. Guru Bipin Singh stands out as a renowned Manipuri performer and influential figure in the art form. His contributions have not only showcased the beauty of Manipuri dance on national and international stages but have also left an indelible mark on its development. Among his disciples, the sisters Darshana Jhaveri, Nayana, Ranjana, and Suverna, have continued his legacy, further contributing to the dissemination and preservation of Manipuri dance. Additionally, notable performers like Charu Mathur and Devyani Chalia have made significant contributions, enhancing the prominence of Manipuri dance through their artistic expressions and dedicated efforts in promoting this traditional dance form. These exponents, with their artistic prowess and dedication, have played a crucial role in ensuring the enduring legacy and continued evolution of Manipuri dance on the global cultural stage.</p>
+        </div>
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://www.studyiq.com/articles/manipuri-dance/" target="_blank">StudyIQ</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

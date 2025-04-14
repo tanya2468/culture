@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chettinad Chicken Curry</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+
+        <h1>Chettinad Chicken Curry</h1>
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/chettinad.jpg' %}" class="rounded" >
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>History: </h2>
+            <p>Chettinad Chicken Curry hails from the Chettinad region in Tamil Nadu, South India, and is a prominent dish in Chettinad cuisine. The Chettiar community, known for their trade and culinary skills, is credited with the creation of this flavorful and aromatic curry. The dish has evolved over generations, with influences from the spice trade, resulting in a unique blend of spices that characterizes Chettinad cuisine</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Chettinad Chicken Curry:</h2>
+            <p>1.	Chettinad, Tamil Nadu: Chettinad, a region in the Sivaganga district of Tamil Nadu, is the birthplace of Chettinad Chicken Curry. The dish is a culinary treasure of this region, and its popularity extends beyond Chettinad to various parts of Tamil Nadu.
+2.	Chennai, Tamil Nadu: Chennai, being the capital of Tamil Nadu, serves as a melting pot of various regional cuisines. Chettinad Chicken Curry is widely enjoyed in the city, with many restaurants offering their own interpretations of the dish.
+3.	South India: Chettinad Chicken Curry has gained popularity throughout South India, becoming a staple in households and restaurants across the region.
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Preparation: Ingredients:</h2>
+            <p>1.	Chicken: Typically, bone-in pieces are used for a richer flavor.
+2.	Chettinad Masala: A unique blend of spices, including fennel seeds, cumin seeds, coriander seeds, peppercorns, dry red chilies, cardamom, cloves, and cinnamon, forms the Chettinad masala.
+3.	Coconut: Grated or ground coconut is often added to create a rich and creamy texture.
+4.	Onions and Tomatoes: These form the base of the curry, providing depth and sweetness.
+5.	Ginger and Garlic: Freshly minced or crushed ginger and garlic contribute to the aromatic flavor profile.
+6.	Curry Leaves: A staple in South Indian cuisine, curry leaves add a distinctive taste.
+7.	Tamarind Paste: Tamarind paste provides a tangy element to balance the spices.
+</p>
+        </div>
+
+
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Chicken_curry" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Dosa</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+
+        <h1>MASALA DOSA</h1>
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/masala.jpg' %}" class="rounded" alt="Masala Dosa">
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>History: </h2>
+            <p>The origins of Masala Dosa can be traced back to the southern Indian state of Karnataka, particularly in the city of Udupi. The dish has a fascinating history that dates back to the 20th century. Legend has it that the Udupi restaurants, known for their vegetarian fare, introduced the concept of dosa with a spiced potato filling, giving rise to the iconic Masala Dosa. Over time, this delectable creation gained immense popularity and became a staple not just in Karnataka but throughout South India.</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Masala Dosa:</h2>
+            <p>1.	Udupi, Karnataka: Udupi is often regarded as the birthplace of Masala Dosa. The Udupi cuisine, which originated in the Udupi Krishna Matha, contributed significantly to the development and popularity of this dish.
+2.	Mysuru (Mysore), Karnataka: Mysuru is another city in Karnataka known for its culinary heritage, and Masala Dosa is a favorite among locals and tourists alike. The Mysuru style of preparing Masala Dosa often involves a slightly thicker and softer dosa compared to other regions.
+3.	Chennai, Tamil Nadu: Chennai, the capital of Tamil Nadu, has embraced Masala Dosa as a breakfast staple. The city is home to numerous eateries and restaurants that serve delicious variations of this iconic dish.
+4.	Bangalore, Karnataka: Bangalore, being a melting pot of cultures and cuisines, has a thriving dosa culture. Masala Dosa is readily available in various eateries, ranging from street food stalls to upscale restaurants.
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Preparation: </h2>
+            <p>The preparation of Masala Dosa involves several steps:
+1.	Dosa Batter: A mixture of fermented rice and urad dal creates the dosa batter. The fermentation process contributes to the characteristic light and airy texture of the dosa.
+2.	Dosa: The batter is spread thinly on a hot griddle, creating a large, thin pancake. It is then cooked until crispy, often with a spread of ghee or oil
+</p>
+        </div>
+
+
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Masala_dosa" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

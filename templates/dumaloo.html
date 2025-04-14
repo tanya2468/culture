@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dum Aloo</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+
+        <h1>Dum Aloo</h1>
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/dumaloo.jpg' %}" class="rounded" >
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>History: </h2>
+            <p>Dum Aloo, a classic dish of Kashmiri cuisine, has a history deeply rooted in the culinary traditions of the Kashmir Valley. The word "Dum" refers to the slow-cooking method, while "Aloo" translates to potatoes. The dish is believed to have originated during the Mughal era when the rulers introduced their culinary techniques and flavors to the region. Over time, Dum Aloo has become an integral part of Kashmiri cuisine, celebrated for its unique blend of spices and the use of local ingredients.</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Dum Aloo:</h2>
+            <p>1.	Srinagar, Kashmir: The capital city of Jammu and Kashmir, Srinagar, is renowned for its vibrant culinary scene, and Dum Aloo holds a special place in the local cuisine. It is served in traditional Kashmiri households as well as in restaurants catering to both locals and tourists.
+2.	Jammu: The city of Jammu, with its own distinct cuisine, also embraces Dum Aloo as a popular and flavorful dish. Here, variations in preparation may reflect local preferences.
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Preparation: Ingredients:</h2>
+            <p>1.	Baby Potatoes: Small, waxy potatoes are often used for Dum Aloo, ensuring a creamy texture after cooking.
+2.	Yogurt (Curd): Yogurt is a key ingredient in the rich and flavorful gravy.
+3.	Spices: A blend of aromatic spices such as fennel seeds, ginger, garlic, cardamom, cloves, and Kashmiri red chili powder contributes to the distinctive flavor profile.
+4.	Tomatoes and Onions: Fresh tomatoes and onions are used to create a luscious base for the curry.
+5.	Mustard Oil: The use of mustard oil adds a unique pungency to the dish.
+</p>
+        </div>
+
+
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Dum_aloo" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

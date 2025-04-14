@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajar Ka Halwa</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+
+        <h1>Gajar Ka Halwa</h1>
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/halwa.jpg' %}" class="rounded" alt="Gajar">
+        </div>
+    </div>
+
+    <div class="container-xxl">
+        <div class="card">
+            <h2>HISTORY:</h2>
+            <p>Gajar Ka Halwa, or Carrot Halwa, is a classic North Indian dessert with roots in the Mughal era. It is believed to have been introduced to the Indian subcontinent by the Mughals, who had a rich culinary tradition influenced by Persian and Central Asian flavors. Over time, Gajar Ka Halwa became a popular winter delicacy, especially in North India, where fresh and sweet carrots are abundant during the season</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Gajar Ka Halwa:</h2>
+            <p>1.	Delhi, North India: Delhi, being the capital city and a cultural hub of North India, is famous for its diverse culinary offerings. Gajar Ka Halwa is a staple during winters, and you can find it in traditional sweet shops as well as in the homes of Delhiites.
+2.	Amritsar, Punjab: Punjab is known for its rich and indulgent cuisine, and Gajar Ka Halwa is no exception. In Amritsar, the dish is prepared with extra love and often served in Gurudwaras as a prasad during festivals.
+3.	Lucknow, Uttar Pradesh: Lucknow, known for its Awadhi cuisine, is another place where Gajar Ka Halwa is relished. The city's culinary heritage is deeply influenced by Mughal traditions, and the halwa is prepared with finesse in many households and sweet shops.
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Preparation: Ingredients:</h2>
+            <p>1.	Carrots: Grated fresh carrots are a key ingredient, and their natural sweetness is a highlight of the dish.
+2.	Milk: Whole milk is simmered to reduce and thicken, contributing to the richness of the halwa.
+3.	Ghee (Clarified Butter): Ghee is used for sautéing the carrots and adding richness to the halwa.
+4.	Sugar: Sweetness is enhanced with the addition of sugar.
+5.	Nuts and Dry Fruits: Almonds, cashews, and raisins are commonly added for texture and flavor.
+6.	Cardamom Powder: Ground cardamom adds a fragrant and aromatic element to the dish.
+</p>
+        </div>
+
+
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Halva" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
+</body>
+</html>

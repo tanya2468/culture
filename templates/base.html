@@ -1,0 +1,964 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian Culture</title>
+ <style>
+
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background: url(bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+}
+#chk1{
+    display: none;
+
+
+}
+i{
+    color: #fff;
+    cursor: pointer;
+}
+header .logo{
+    flex: 1;
+    color:#fff;
+
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:#f2f2f2;
+    border-radius: 30px;
+    color:gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+
+}
+
+.search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+    color: #fff;
+}
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+       body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width:1000;
+	margin:auto;
+    height:50vh;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    height:55vh;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+		*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 10h;
+    overflow:hidden;
+background: #0e0e16;    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+.banner1{
+    width: 100%;
+    height:90vh;
+    overflow:hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+.navbar{
+    width: 90%;
+height:10%
+    padding: 30px;
+    margin: auto;
+background: #0e0e16;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+li a:hover{
+    background: white;
+    transition: 0.6s;
+}
+li p:hover{
+    background: white;
+    transition: 0.6s;
+}
+.navbar a:hover{
+    color: black;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+     top: 0%;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height:auto%;
+    }
+}
+
+
+	   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: charlieUltra;
+    src: url(fonts/charlie-display-ultra.ttf);
+}
+
+@font-face {
+    font-family: GreatSejagad;
+    src: url(fonts/Great_Sejagad.ttf);
+}
+
+.container {
+    width: 1355px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.center {
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    color: #45f882;
+    font-size: 70px;
+    font-family: GreatSejagad;
+}
+
+.main_title {
+    color: #fff;
+    font-size: 70px;
+    font-family: charlieUltra;
+    line-height: 80px;
+}
+
+section.slider {
+    padding: 10px 0;
+    background: #0e0e16;
+    height: auto;
+}
+
+section.slider .title {
+    font-size: 42px;
+    position: relative;
+    top: 24px;
+}
+
+.slider-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.slide_content {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    text-align: center;
+}
+
+button.slider__button {
+    background: #45f882;
+    border: 3px solid #45f882;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #0e0e16;
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+
+button.slider__button:hover {
+    border: 3px solid #45f882;
+    background: transparent;
+    color: #45f882;
+}
+
+.slide_content p {
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /* Adjust as needed */
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    /* Adjust as needed */
+}
+
+.slider .btns {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.slider .btns button {
+    height: 48px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    background: none;
+    font-family: charlieUltra;
+    border: 3px solid #45f882;
+    color: #45f882;
+    letter-spacing: 1px;
+}
+
+.slider .btns button:hover {
+    background: #45f882;
+    border: 3px solid #45f882;
+    color: #0e0e16;
+}
+
+.slide:hover {
+    border: 3px solid #45f882;
+}
+
+.slider {
+    --slider-padding: 1rem;
+    --slider-column-gap: 1rem;
+    --slide-width: 20%;
+    --slide-min-width: 15rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__track {
+    display: flex;
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    padding-inline: var(--slider-padding);
+    scroll-behavior: smooth;
+    list-style-type: none;
+    padding: 0;
+    margin-right: calc(--var(slider-column-gap) * -1);
+    scrollbar-width: none;
+}
+
+.slider__track > * {
+    flex: 0 0 var(--slide-width);
+    min-width: var(--slide-min-width);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    padding-right: var(--slider-column-gap);
+}
+
+.slider__track::-webkit-scrollbar {
+    display: none;
+}
+
+.slider__buttons {
+    margin-top: 1rem;
+}
+
+.slider__buttons [disabled] {
+    opacity: 0.5;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px; /* Set a fixed height for the slides */
+    position: relative;
+    border: 3px solid #383c4e;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.slideimg {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the entire slide */
+    object-fit: cover; /* Maintain aspect ratio and cover the slide */
+    border-radius: 10px;
+}
+
+
+body, html, #app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  overflow: hidden;
+  touch-action: pan-up;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+}
+
+#app h1 {
+  --fontSize: 60px;
+  --lineHeight: 80px;
+  width: auto;
+  height: calc(2 * var(--lineHeight));
+  line-height: var(--lineHeight);
+  margin: calc(50vh - var(--lineHeight)) auto 0;
+  font-size: var(--fontSize);
+}
+
+#app a {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+#app canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mob-icons {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    .main_title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .main_title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    section.slider .title {
+        font-size: 40px;
+    }
+
+    button.slider__button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .slider .btns button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 426px) {
+    .main_title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    section.slider .title {
+        font-size: 30px;
+        top: 10px;
+    }
+}
+
+.container1 {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically if needed */
+}
+
+#prevButton,
+#nextButton {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#nextButton {
+    margin-left: 0;
+}
+.p2{
+	 text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;}
+
+
+	 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 5-em; /* Adjust the size as needed */
+  font-weight: bold; /* Make the font bold */
+  color: #FFF; /* Set the color of the title */
+  text-align: center; /* Center the title */
+  margin-top: 50px; /* Add margin to the top for spacing */
+}
+
+
+.history, .nomenclature {
+  margin: 20px;
+}
+
+.history h2, .nomenclature h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.history p, .nomenclature p {
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.image-container img {
+  width: 80%;
+  height:60%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  width: 100%;
+background: linear-gradient(to right, #ff9933, white 33%, #138808);  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card h2 {
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card p {
+  padding: 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  background: linear-gradient(to right, #ff9933, white 33%, #138808);
+}
+.card h4 {
+  font-size: 18px;
+
+  margin: 10px 20px;
+  color: #000;
+}
+body {
+    background: linear-gradient(to right, #ff9933, white 33%, #138808);
+
+
+}
+	 ::-webkit-scrollbar{
+	 	display: none;
+	 }
+
+
+
+    </style>
+
+
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+
+            <div class="navbar">
+
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+
+                   {% if user.is_authenticated %}
+                    <li><a href="{% url 'maps' %}">Travel</a></li>
+					{% else %}
+					<li><a href="{% url 'login' %}">Travel</a></li>
+					 {% endif %}
+                    {% comment %} <li><a href="{% url 'adddata' %}"></a></li> {% endcomment %}
+					 {% if user.is_authenticated %}
+                    <li><a href="{% url 'contact' %}">Support</a></li>
+					{% else %}
+					<li><a href="{% url 'login' %}">Support</a></li>
+					 {% endif %}
+
+
+
+  <li >
+                {% if user.is_authenticated %}
+	  <a style="margin-left:630px;"> Hello, {{ user.username }}! </a><a href="{% url 'logout' %}"> Logout</a>
+                {% else %}
+                    <a style="margin-left:600px;" href="{% url 'login' %}">Login</a>
+                {% endif %}
+            </li>
+                </ul>
+            </div>
+
+        </div>
+
+<div>
+{% block content %}
+    {% endblock %}
+		</div>
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		{% comment %} <div class="footer-col"> {% endcomment %}
+  	 			{% comment %} <h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div> {% endcomment %}
+  	 		{% comment %} <div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div> {% endcomment %}
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+	<script>
+    function initializeSlider(sliderContainer) {
+        const slider = sliderContainer.querySelector("[data-slider]");
+        const track = slider.querySelector("[data-slider-track]");
+        const prevButton = sliderContainer.querySelector(".prevButton");
+        const nextButton = sliderContainer.querySelector(".nextButton");
+
+        if (track) {
+            prevButton.addEventListener("click", () => {
+                nextButton.removeAttribute("disabled");
+
+                track.scrollTo({
+                    left: track.scrollLeft - track.firstElementChild.offsetWidth,
+                    behavior: "smooth"
+                });
+            });
+
+            nextButton.addEventListener("click", () => {
+                prevButton.removeAttribute("disabled");
+
+                track.scrollTo({
+                    left: track.scrollLeft + track.firstElementChild.offsetWidth,
+                    behavior: "smooth"
+                });
+            });
+
+            track.addEventListener("scroll", () => {
+                const trackScrollWidth = track.scrollWidth;
+                const trackOuterWidth = track.clientWidth;
+
+                prevButton.removeAttribute("disabled");
+                nextButton.removeAttribute("disabled");
+
+                if (track.scrollLeft <= 0) {
+                    prevButton.setAttribute("disabled", "");
+                }
+
+                if (track.scrollLeft === trackScrollWidth - trackOuterWidth) {
+                    nextButton.setAttribute("disabled", "");
+                }
+            });
+        }
+    }
+
+    // Example: Initialize each slider separately
+    const sliderContainer1 = document.getElementById("sliderContainer1");
+    initializeSlider(sliderContainer1);
+
+    const sliderContainer2 = document.getElementById("sliderContainer2");
+    initializeSlider(sliderContainer2);
+
+		 const sliderContainer3 = document.getElementById("sliderContainer3");
+    initializeSlider(sliderContainer3);
+		 const sliderContainer4 = document.getElementById("sliderContainer4");
+    initializeSlider(sliderContainer4);
+		 const sliderContainer5 = document.getElementById("sliderContainer5");
+    initializeSlider(sliderContainer5);
+     const sliderContainer6 = document.getElementById("sliderContainer6");
+    initializeSlider(sliderContainer6);
+		 const sliderContainer7 = document.getElementById("sliderContainer7");
+    initializeSlider(sliderContainer7);
+		 const sliderContainer8 = document.getElementById("sliderContainer8");
+    initializeSlider(sliderContainer8);
+		 const sliderContainer9 = document.getElementById("sliderContainer9");
+    initializeSlider(sliderContainer9);
+    const sliderContainer10 = document.getElementById("sliderContainer10");
+    initializeSlider(sliderContainer10);
+		
+
+
+
+
+</script>
+<script>
+	import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
+const pc = particlesCursor({
+  el: document.getElementById('app'),
+  gpgpuSize: 512,
+  colors: [0x00ff00, 0x0000ff],
+  color: 0xff0000,
+  coordScale: 0.5,
+  noiseIntensity: 0.001,
+  noiseTimeCoef: 0.0001,
+  pointSize: 5,
+  pointDecay: 0.0025,
+  sleepRadiusX: 250,
+  sleepRadiusY: 250,
+  sleepTimeCoefX: 0.001,
+  sleepTimeCoefY: 0.002
+})
+
+document.body.addEventListener('click', () => {
+  pc.uniforms.uColor.value.set(Math.random() * 0xffffff)
+  pc.uniforms.uCoordScale.value = 0.001 + Math.random() * 2
+  pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001
+  pc.uniforms.uPointSize.value = 1 + Math.random() * 10
+})
+
+</script>
+</body>
+</html>

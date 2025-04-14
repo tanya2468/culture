@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html>
+  <head>
+    <title>Kuchipudi Dance</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+      {% block content %}
+
+    <h1>Kuchipudi Dance</h1>
+     <div  style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+    <div class="text-center">
+  <img src="{% static 'images/dances/dance1.jpg' %}" class="rounded" alt="dance1">
+</div>
+     </div>
+    <div class="container-xxl">
+
+
+
+      <div class="card">
+
+
+      <h2>History</h2>
+      <p>Kuchipudi, like other classical dance forms in India, traces its roots to the Sanskrit Natya Shastra, a foundational treatise on the performing arts. Its first complete compilation is dated to between 200 BCE and 200 CE, but estimates vary between 500 BCE and 500 CE. The most studied version of the Natya Shastra text consists of about 6000 verses structured into 36 chapters. The text describes the theory of Tandava dance (Shiva), the theory of rasa, of bhava, expression, gestures, acting techniques, basic steps, standing postures - all of which are part of Indian classical dances.</p>
+      <p>The dance-drama tradition in Andhra Pradesh is of ancient origins, and the region is mentioned in the Natya Shastra. Bharata Muni credits a graceful movement to Andhra region and discusses it as Kaishiki vritti. The pre-2nd century CE text calls one raga as Andhri, that is from Andhra.</p>
+
+  </div>
+
+      <div class="card">
+
+ <h2>Costumes</h2>
+
+<p>The traditional Kuchipudi was performed by all males troupe. A dancer in a male role would be in Angavastra, also known as Bagalbandi, wear a dhoti (a single pleated piece of cloth hanging down from the waist).A dancer in a female role would wear a Sari with light makeup.</p>
+<p>Modern productions retain the male dress, but are more elaborate and Bharatanatyam-like for the female roles. Women artists wear a brilliantly colourful Sari (or a body fitting dress) with a pleated fan stitched in front to help highlight the exacting footwork. The end of the wrapped Sari is held fast under a light metallic (golden or brass) belt at waist. A Kuchipudi artist braids her hair somewhat differently than a Bharatanatyam artist, to reflect the regional traditions, yet wearing flowers are common. Both have symbolic elements embedded in their hair and face jewelry, such as the Vedic symbolisms for the sun and the moon, the soul and the nature, and she sometimes sets her hairdo in the tribhuvana style which represents the three worlds.Her jewelry may include hair jewelry, ear, nose, armlets, necklaces and often a leather anklet piece with little bells (gajjelu or ghungroo). The forehead has a round red bindi or a symmetric tillaka, while the eyes are typically ringed with black collyrium to ease the viewing of expressions by the audience.</p>
+
+
+  </div>
+       <div class="card">
+
+ <h2>Musical Instruments</h2>
+
+<p>
+Modern productions maintain the male dress style while introducing more intricate and Bharatanatyam-inspired costumes for female roles. Female artists adorn themselves in vibrant Saris or form-fitting dresses, featuring a pleated fan stitched in front to accentuate precise footwork. The end of the Sari is secured under a light metallic (golden or brass) waist belt. Kuchipudi artists style their hair differently from Bharatanatyam artists, reflecting regional traditions, often incorporating flowers. Symbolic elements, such as Vedic symbols representing the sun, moon, soul, and nature, are embedded in their hair and face jewelry. The hair may be arranged in the tribhuvana style, symbolizing the three worlds. Jewelry includes hair ornaments, earrings, nose rings, armlets, necklaces, and a leather anklet with small bells (gajjelu or ghungroo). A round red bindi or symmetric tillaka is worn on the forehead, and the eyes are typically outlined with black collyrium to enhance facial expressions for the audience.</p>
+
+  </div>
+            <div class="card">
+
+ <h2>Styles</h2>
+
+<p>Kuchipudi features various regional styles, known as banis, which have evolved due to the distinctiveness and creativity of different gurus (teachers) in the tradition. This tradition of openness and flexibility in dance styles has historical roots in Indian dance culture and can be traced back to early times in Kuchipudi, as mentioned in the text Nrittaratnavali by Jaya Senapati.
+
+Senapati highlights the existence of Margi and Desi styles in Kuchipudi, drawing from the Nrittaratnavali. The Margi styles are considered more traditional, while the Desi styles involve innovative elements. Examples of Margi styles include Vedayata, Veddangam, Bommalata, Perani, Chindu, Bahurupam, Pagativeshalu, and others. On the other hand, Desi styles encompass Rasaka, Charchari, Bhandika, Kollata, and others, incorporating innovations into the more conservative Margi styles.
+
+This distinction between Margi and Desi styles can be traced back to the historic tradition of Kuchipudi, as mentioned by Senapati in the Nrittaratnavali. Some of these distinct styles are recognizable in the sculptures of Warangal from the 13th century.
+
+
+
+
+
+</p>
+  </div>
+<div class="card">
+ <div class="references">
+        <h2>References:</h2>
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Kuchipudi" target="_blank">Wikipedia</a></li>
+
+            <!-- Add more references as needed -->
+        </ul>
+    </div>
+</div>
+
+
+
+    </div>
+
+
+
+
+{% endblock %}
+  </body>
+</html>

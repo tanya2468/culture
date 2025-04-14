@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malai Kofta </title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+        <h1>Malai Kofta </h1>
+
+    <div style=" width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;">
+        <div class="text-center">
+            <img src="{% static 'images/cuisines/malai.jpg' %}" class="rounded" alt="Malai">
+        </div>
+    </div>
+
+    <div class="container-xxl">
+
+        <div class="card">
+            <h2>HISTORY:</h2>
+            <p>Malai Kofta, a rich and indulgent North Indian curry, has roots in Mughlai cuisine. The Mughals, known for their opulent and flavorful dishes, are credited with the creation of Malai Kofta. The term "Malai" refers to cream, and "Kofta" refers to deep-fried dumplings. This dish evolved as a vegetarian alternative to the meat-based koftas, combining a luscious tomato-based curry with dumplings made from paneer (Indian cottage cheese), potatoes, and sometimes mixed with nuts</p>
+        </div>
+
+        <div class="card">
+            <h2>Places Famous for Malai Kofta:</h2>
+            <p>1.	Delhi, North India: As the capital city, Delhi has been a melting pot of various culinary traditions, and Malai Kofta has found a special place in the city's rich food culture. It is served in both traditional and modern restaurants.
+2.	Lucknow, Uttar Pradesh: Lucknow, renowned for its Awadhi cuisine, is another place where Malai Kofta is relished. The city's culinary heritage, influenced by Mughal traditions, is known for its rich and aromatic dishes.
+3.	Amritsar, Punjab: In Amritsar, Malai Kofta is often prepared with a Punjabi twist, featuring a creamy and flavorful curry. The dish is enjoyed in homes and restaurants alike.
+</p>
+        </div>
+
+        <div class="card">
+            <h2>Preparation: Kofta:</h2>
+            <p>1.	Paneer and Potato Mixture: Grated paneer and mashed potatoes are mixed with spices, sometimes including nuts, and shaped into round or oval dumplings.
+2.	Frying: The koftas are deep-fried until golden brown, imparting a crispy texture to the exterior while maintaining a soft interior.
+Curry:
+1.	Tomato-Based Gravy: The curry base is prepared with a blend of tomatoes, onions, ginger, and garlic, cooked until the mixture becomes thick and the raw aroma disappears.
+2.	Cashew or Cream Addition: Cashew paste or cream is often added to the curry for richness and a velvety texture.
+3.	Spices: A mix of aromatic spices such as garam masala, coriander, cumin, and turmeric is used to season the curry.
+4.	Kasuri Methi (Dried Fenugreek Leaves): The addition of dried fenugreek leaves enhances the flavor of the curry.
+</p>
+        </div>
+
+        <div class="card">
+            <div class="references">
+                <h2>References:</h2>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Kofta" target="_blank">Wikipedia</a></li>
+                    <!-- Add more references as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>
